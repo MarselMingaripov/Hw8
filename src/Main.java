@@ -33,17 +33,29 @@ public class Main {
         array3[1] = false;
 
         for (int i = 0; i <array1.length; i++){
-            System.out.print(array1[i] + " ");
+            if (i == array1.length - 1){
+                System.out.print(array1[i]);
+                break;
+            }
+            System.out.print(array1[i] + ", ");
         }
         System.out.println();
 
         for (int i = 0; i <array2.length; i++){
-            System.out.print(array2[i] + " ");
+            if (i == array2.length - 1){
+                System.out.print(array2[i]);
+                break;
+            }
+            System.out.print(array2[i] + ", ");
         }
         System.out.println();
 
         for (int i = 0; i <array3.length; i++){
-            System.out.print(array3[i] + " ");
+            if (i == array3.length - 1){
+                System.out.print(array3[i]);
+                break;
+            }
+            System.out.print(array3[i] + ", ");
         }
         System.out.println();
         System.out.println();
