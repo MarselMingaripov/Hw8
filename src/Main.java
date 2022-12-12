@@ -1,9 +1,12 @@
+import java.sql.Array;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
-//        task4();
+        task4();
     }
 
     public static void task1(){
@@ -101,6 +104,22 @@ public class Main {
         }
         System.out.println();
         System.out.println();
+    }
+
+    public static void task4(){
+        System.out.println("task4");
+
+        int[] array1 = new int[3];
+        array1[0] = 1;
+        array1[1] = 2;
+        array1[2] = 3;
+
+        for (int i = 0; i < array1.length; i++){
+            if (array1[i] % 2 != 0){
+                array1[i] = array1[i] + 1;
+            }
+        }
+        System.out.println(Arrays.toString(array1));
     }
 
 }
